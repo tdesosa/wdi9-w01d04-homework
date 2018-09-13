@@ -28,3 +28,15 @@ const checkPalindrome = (word) => {
  
  console.log(checkPalindrome("Radar"));
  console.log(checkPalindrome("Borscht"));
+
+ // 3. DIGIT SUM
+
+ const sumDigits = (num) => {
+    const createArray = num.toString().split("");
+    const num1 = parseInt(createArray[0]);
+    const num2 = parseInt(createArray[1]);
+    const sumOfCreateArray = num1 + num2;
+    console.log(sumOfCreateArray);
+ }
+
+ sumDigits(42);
