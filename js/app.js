@@ -64,3 +64,38 @@ const checkPalindrome = (word) => {
  }
 
  sumArray([1, 2, 3, 4, 5, 6]);
+
+ // 6. PRIME NUMBERS
+
+ // Q1)
+
+ const  checkPrime = (num) => {
+    if(num < 2) { 
+        return false;
+    }
+    for (var i = 2; i < num; i++) {
+        if(num % i === 0){
+            return false;
+    } else{
+        return true;
+    }
+}
+}
+console.log(checkPrime(26));
+
+// Q2)
+
+const printPrimes = (counter) => {
+    for (let counter = 1; counter <= 100; counter++) {
+        let notPrime = false;
+        for (let i = 2; i <= counter; i++) {
+            if (counter % i === 0 && i !== counter) {
+                notPrime = true;
+            }
+        }
+        if(notPrime === false) {
+            console.log(counter);
+        }
+    }
+ }
+printPrimes(99);
