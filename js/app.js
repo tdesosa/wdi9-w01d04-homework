@@ -40,3 +40,15 @@ const checkPalindrome = (word) => {
  }
 
  sumDigits(42);
+
+ // 4. PYTHAGORAS
+
+ const calculateSide = (sideA, sideB) => {
+    const squareSideA = Math.pow(sideA, 2);
+    const squareSideB = Math.pow(sideB, 2);
+    const addSquares = squareSideA + squareSideB;
+    const sqRoot = Math.sqrt(addSquares);
+    console.log(sqRoot);
+ }
+
+ calculateSide(8, 6);
